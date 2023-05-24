@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700;900&display=swap");
+
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  // Colors
+  --blue: rgba(97, 218, 251, 1);
+  --dark-gray: rgba(53, 53, 53, 1);
+  --gray: rgba(149, 149, 149, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  // Body Copy
+
+  // Sizes
+  --fs-smaller: 14px;
+  --fs-small: 16px;
+  --fs-medium: 20px;
+  --fs-semi-medium: 22px;
+  --fs-large: 32px;
+
+  // Weights
+  --fw-light: 300;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+}
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font: inherit; /* force styling of type through styling, rather than elements */
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  cursor: pointer;
+}
