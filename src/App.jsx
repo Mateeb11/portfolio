@@ -1,7 +1,13 @@
 import "./App.scss";
 
+import Background from "./background";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Background />
+    </>
+  );
 }
 
 export default App;
