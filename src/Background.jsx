@@ -13,9 +13,7 @@ export default function Background() {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <Particles
@@ -73,7 +71,7 @@ export default function Background() {
               default: "bounce",
             },
             random: true,
-            speed: 0.03,
+            speed: 0.07,
             straight: false,
           },
           number: {
