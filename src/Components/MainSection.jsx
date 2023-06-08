@@ -9,7 +9,10 @@ export default function MainSection() {
   return (
     <section className={classes.container}>
       <div className={classes.description}>
-        <img src={reactLogo} alt="" />
+        <img
+          src={reactLogo}
+          alt="React logo rotating 360 degree all the time"
+        />
         <h1>
           Welcome to my page, I’m <UnderLine>Mateeb Alharbi</UnderLine>
         </h1>
