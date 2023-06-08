@@ -10,7 +10,7 @@ export default function MainSection() {
       <div className={classes.description}>
         <img src={reactLogo} alt="" />
         <h1>
-          Welcome to my page, I’m<UnderLine>Mateeb Alharbi</UnderLine>
+          Welcome to my page, I’m <UnderLine>Mateeb Alharbi</UnderLine>
         </h1>
       </div>
     </section>
