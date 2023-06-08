@@ -1,0 +1,18 @@
+.line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: 3px solid var(--blue);
+    background-color: var(--blue);
+
+    height: 1px;
+    width: 100%;
+
+    left: 0.25em;
+    bottom: -0.15em;
+
+    transform: rotate(1deg);
+  }
+}
