@@ -1,6 +1,7 @@
 import classes from "./MainSection.module.scss";
 
 import UnderLine from "../UI/Underline";
+import Button from "../UI/Button";
 
 import reactLogo from "../assets/react.svg";
 
@@ -16,6 +17,7 @@ export default function MainSection() {
           A front end web developer using <span>React JS</span>, passionate
           about building responsive and modern websites.
         </p>
+        <Button>CONTACT ME</Button>
       </div>
     </section>
   );
