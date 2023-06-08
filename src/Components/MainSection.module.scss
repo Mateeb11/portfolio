@@ -22,4 +22,15 @@
     font-size: var(--fs-large);
     font-weight: var(--fw-bolder);
   }
+
+  .info {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-light);
+
+    padding-inline: 1em;
+
+    span {
+      color: var(--blue);
+    }
+  }
 }

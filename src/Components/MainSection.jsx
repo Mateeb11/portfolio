@@ -12,6 +12,10 @@ export default function MainSection() {
         <h1>
           Welcome to my page, I’m <UnderLine>Mateeb Alharbi</UnderLine>
         </h1>
+        <p className={classes.info}>
+          A front end web developer using <span>React JS</span>, passionate
+          about building responsive and modern websites.
+        </p>
       </div>
     </section>
   );
