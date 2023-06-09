@@ -1,8 +1,15 @@
 html {
-  background-color: blackå;
+  background-color: black;
 }
 
 .background {
   position: fixed;
   z-index: -1000;
+}
+
+.app {
+  display: grid;
+  gap: 4.875em;
+
+  margin-inline: 0.625em;
 }

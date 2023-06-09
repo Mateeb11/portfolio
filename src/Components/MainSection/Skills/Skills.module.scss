@@ -11,14 +11,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 3em 5em;
 
-    padding-inline: 2em;
-
-    line-height: 1.4;
+    padding-inline: 1.25em;
 
     list-style-image: url("../../../assets/circle.svg");
 
     li {
-      font-size: var(--fs-medium);
+      font-size: var(--fs-semi-medium);
       font-weight: var(--fw-medium);
 
       div {
