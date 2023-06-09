@@ -1,9 +1,11 @@
 import classes from "./MainSection.module.scss";
 
-import UnderLine from "../UI/Underline";
-import Button from "../UI/Button";
+import Skills from "./Skills/Skills";
 
-import reactLogo from "../assets/react.svg";
+import UnderLine from "../../UI/Underline";
+import Button from "../../UI/Button";
+
+import reactLogo from "../../assets/react.svg";
 
 export default function MainSection() {
   return (
@@ -22,6 +24,7 @@ export default function MainSection() {
         </p>
         <Button>CONTACT ME</Button>
       </div>
+      <Skills></Skills>
     </section>
   );
 }

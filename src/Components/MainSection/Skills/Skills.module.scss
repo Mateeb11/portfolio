@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  width: 100%;
+  gap: 2em;
+
+  text-align: start;
+
+  .list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 3em 5em;
+
+    padding-inline: 2em;
+
+    line-height: 1.4;
+
+    list-style-image: url("../../../assets/circle.svg");
+
+    li {
+      font-size: var(--fs-medium);
+      font-weight: var(--fw-medium);
+
+      div {
+        font-size: var(--fs-small);
+        font-weight: var(--fw-light);
+      }
+    }
+  }
+
+  .line {
+    margin: auto;
+    width: 200px;
+    height: 2px;
+    background-color: var(--white);
+  }
+}
