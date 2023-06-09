@@ -46,6 +46,10 @@
   color: var(--white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* responsive images/videos */
 img,
 picture,

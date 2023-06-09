@@ -17,13 +17,15 @@
     border-radius: 10px;
     img {
       width: 20em;
-      aspect-ratio: 1/2;
     }
   }
 
   .projectInfo {
+    display: grid;
+    gap: 0.625em;
+
     padding: 1.125em 0em 2.125em;
-    line-height: 1.75;
+
     p {
       font-size: var(--fs-medium);
       font-weight: var(--fw-medium);
