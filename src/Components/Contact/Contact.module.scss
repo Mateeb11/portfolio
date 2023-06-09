@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  gap: 4.125em;
+
+  img {
+    padding-inline: 1em;
+  }
+
+  .email {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-regular);
+  }
+
+  .form {
+    display: grid;
+    width: 90%;
+
+    padding: 1.6875em 1em;
+
+    border: 1px solid var(--white);
+    border-radius: 10px;
+
+    input,
+    textarea {
+      outline: none;
+      box-shadow: none;
+
+      border: 0;
+      background-color: transparent;
+      border-bottom: 1px solid white;
+
+      padding-block: 1em 1em;
+
+      font-size: var(--fs-small);
+      font-weight: var(--fw-regular);
+    }
+    .button {
+      margin: auto;
+
+      margin-top: 1.8125em;
+    }
+  }
+}

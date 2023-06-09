@@ -5,6 +5,11 @@ import emailjs from "@emailjs/browser";
 import classes from "./Contact.module.scss";
 
 import SectionTitle from "../../UI/SectionTitle";
+import UnderLine from "../../UI/Underline";
+import Button from "../../UI/Button";
+
+import planet from "../../assets/planet.png";
+
 export default function Contact() {
   const form = useRef();
 
@@ -30,15 +35,25 @@ export default function Contact() {
   return (
     <div>
       <SectionTitle title="CONTACT" />
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+      <div className={classes.container}>
+        <img src={planet} alt="" />
+        <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
+        <form ref={form} onSubmit={sendEmail} className={classes.form}>
+          <input
+            className={classes}
+            type="text"
+            name="user_name"
+            placeholder="Name"
+          />
+
+          <input type="email" name="user_email" placeholder="Email" />
+
+          <textarea name="message" placeholder="Message" rows="7" />
+          <Button button={true} className={classes.button}>
+            Send
+          </Button>
+        </form>
+      </div>
     </div>
   );
 }
