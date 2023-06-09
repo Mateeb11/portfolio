@@ -1,9 +1,9 @@
 import classes from "./Button.module.scss";
 
-export default function Button({ children, onClick }) {
+export default function Button({ children, href, target }) {
   return (
-    <button className={classes.button} onClick={onClick}>
+    <a className={classes.button} href={href} target={target}>
       {children}
-    </button>
+    </a>
   );
 }

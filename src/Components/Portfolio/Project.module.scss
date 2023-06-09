@@ -1,0 +1,41 @@
+.project {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.75em 0.625em;
+
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+
+    padding-inline: 3em;
+
+    background-color: var(--gray);
+    border-radius: 10px;
+    img {
+      width: 20em;
+      aspect-ratio: 1/2;
+    }
+  }
+
+  .projectInfo {
+    padding: 1.125em 0em 2.125em;
+    line-height: 1.75;
+    p {
+      font-size: var(--fs-medium);
+      font-weight: var(--fw-medium);
+    }
+    span {
+      font-size: var(--fs-small);
+      font-weight: var(--fw-light);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
