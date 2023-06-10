@@ -34,11 +34,16 @@ export default function Contact() {
   };
   return (
     <div>
-      <SectionTitle title="CONTACT" />
+      <SectionTitle title="CONTACT ME" />
       <div className={classes.container}>
         <img src={planet} alt="" />
         <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
-        <form ref={form} onSubmit={sendEmail} className={classes.form}>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className={classes.form}
+          id="contact"
+        >
           <input
             className={classes}
             type="text"

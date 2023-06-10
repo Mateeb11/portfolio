@@ -22,7 +22,7 @@ export default function MainSection() {
           A front end web developer using <span>React JS</span>, passionate
           about building responsive and modern websites.
         </p>
-        <Button>CONTACT ME</Button>
+        <Button href="#contact">CONTACT ME</Button>
       </div>
       <Skills></Skills>
     </section>
