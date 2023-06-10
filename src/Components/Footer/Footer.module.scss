@@ -1,0 +1,16 @@
+.footer {
+  display: grid;
+  gap: 1.3125em;
+
+  padding-block: 2.875em 1.75em;
+
+  text-align: center;
+
+  border-top: 2px solid var(--white);
+
+  p {
+    color: var(--gray);
+    font-size: var(--fs-smaller);
+    font-weight: var(--fw-regular);
+  }
+}
