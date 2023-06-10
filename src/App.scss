@@ -12,4 +12,10 @@ html {
   gap: 4.875em;
 
   margin-inline: 0.625em;
+
+  @media (min-width: 768px) {
+    & {
+      margin-inline: 3.125em;
+    }
+  }
 }
