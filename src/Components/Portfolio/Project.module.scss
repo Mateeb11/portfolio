@@ -17,6 +17,17 @@
     border-radius: 10px;
     img {
       width: 20em;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 768px) {
+      & {
+        padding: 0;
+        background-color: transparent;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 
