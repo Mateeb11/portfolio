@@ -6,8 +6,15 @@ import github from "../assets/github.svg";
 
 export default function Social() {
   return (
-    <div className={classes.container}>
-      <img src={logo} alt="The website logo" />
+    <div className={classes.container} id="header">
+      <img
+        src={logo}
+        alt="The website logo"
+        className={classes.logo}
+        onClick={() => {
+          location.href = "#header";
+        }}
+      />
       <div className={classes.social}>
         <a href="https://www.linkedin.com/in/mateeb-alharbi/">
           <img src={linkedin} alt="LinkedIn logo and a link to my page" />
