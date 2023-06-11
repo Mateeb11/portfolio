@@ -24,7 +24,7 @@ export default function Portfolio() {
         <Project
           image={isBigScreen ? multiStepFormDesktop : multiStepFormMobile}
           title="Multi-step from"
-          skills="React JS, Sass"
+          skills="React JS, Sass, JavaScript"
           website="https://aback-icicle.surge.sh/"
           code="https://github.com/Mateeb11/multi-step-form"
         />
@@ -45,7 +45,7 @@ export default function Portfolio() {
         <Project
           image={isBigScreen ? eCommerceDesktop : eCommerceMobile}
           title="E-commerce product page"
-          skills="React JS, CSS"
+          skills="React JS, CSS, JavaScript"
           website="https://present-hook.surge.sh/"
           code="https://github.com/Mateeb11/ecommerce-product-page"
         />
