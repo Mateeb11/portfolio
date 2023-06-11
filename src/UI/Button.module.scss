@@ -1,3 +1,8 @@
+.grayBox {
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -15,6 +20,13 @@
   padding: 1em;
 
   text-decoration: none;
+
+  transition: transform 0.25s ease;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-0.25em) translateX(0.25em);
+  }
 
   @media (min-width: 768px) {
     font-size: var(--fs-small);

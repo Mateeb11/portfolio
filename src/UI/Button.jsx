@@ -9,16 +9,24 @@ export default function Button({
   className,
 }) {
   return button ? (
-    <button
-      className={`${classes.button} ${className}`}
-      onClick={onClick}
-      type="submit"
-    >
-      {children}
-    </button>
+    <div className={`${classes.grayBox}  ${className}`}>
+      <button
+        className={`${classes.button} ${className}`}
+        onClick={onClick}
+        type="submit"
+      >
+        {children}
+      </button>
+    </div>
   ) : (
-    <a className={`${classes.button} ${className}`} href={href} target={target}>
-      {children}
-    </a>
+    <div className={`${classes.grayBox}  ${className}`}>
+      <a
+        className={`${classes.button} ${className}`}
+        href={href}
+        target={target}
+      >
+        {children}
+      </a>
+    </div>
   );
 }
