@@ -16,34 +16,72 @@
     width: min(100%, 25em);
 
     gap: 1.75em;
-  }
 
-  img {
-    width: 50%;
-    animation: App-logo-spin infinite 20s linear;
-  }
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
     }
-    to {
-      transform: rotate(360deg);
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
-  }
 
-  h1 {
-    font-size: var(--fs-large);
-    font-weight: var(--fw-bolder);
-  }
+    img {
+      width: 50%;
+      animation: App-logo-spin infinite 20s linear;
+    }
 
-  .info {
-    font-size: var(--fs-small);
-    font-weight: var(--fw-light);
+    h1 {
+      font-size: var(--fs-large);
+      font-weight: var(--fw-bolder);
+    }
 
-    padding-inline: 1em;
+    .summary {
+      font-size: var(--fs-small);
+      font-weight: var(--fw-light);
 
-    span {
-      color: var(--blue);
+      padding-inline: 1em;
+
+      span {
+        color: var(--blue);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      & {
+        width: 100%;
+        flex-direction: row-reverse;
+        gap: 7em;
+
+        justify-content: space-between;
+
+        h1 {
+          font-size: var(--fs-larger);
+        }
+
+        .summary {
+          font-size: var(--fs-semi-medium);
+          padding: 0;
+        }
+        .info {
+          text-align: start;
+          align-items: start;
+
+          width: min(100%, 35em);
+        }
+
+        img {
+          width: 20em;
+          margin-right: 2em;
+        }
+      }
     }
   }
 }

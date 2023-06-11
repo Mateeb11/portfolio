@@ -15,14 +15,16 @@ export default function MainSection() {
           src={reactLogo}
           alt="React logo rotating 360 degree all the time"
         />
-        <h1>
-          Welcome to my page, I’m <UnderLine>Mateeb Alharbi</UnderLine>
-        </h1>
-        <p className={classes.info}>
-          A front end web developer using <span>React JS</span>, passionate
-          about building responsive and modern websites.
-        </p>
-        <Button href="#contact">CONTACT ME</Button>
+        <div className={classes.info}>
+          <h1>
+            Welcome to my page, I’m <UnderLine>Mateeb Alharbi</UnderLine>
+          </h1>
+          <p className={classes.summary}>
+            A front end web developer using <span>React JS</span>, passionate
+            about building responsive and modern websites.
+          </p>
+          <Button href="#contact">CONTACT ME</Button>
+        </div>
       </div>
       <Skills></Skills>
     </section>
