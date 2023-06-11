@@ -36,8 +36,10 @@ export default function Contact() {
     <div>
       <SectionTitle title="CONTACT ME" />
       <div className={classes.container}>
-        <img src={planet} alt="" />
-        <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
+        <div className={classes.planet}>
+          <img src={planet} alt="" />
+          <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
+        </div>
         <form
           ref={form}
           onSubmit={sendEmail}
