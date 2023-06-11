@@ -2,4 +2,8 @@
   display: grid;
 
   gap: 4.875em;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }

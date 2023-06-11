@@ -52,9 +52,10 @@
     justify-content: space-between;
 
     @media (min-width: 768px) {
-      & {
-        justify-content: space-evenly;
-      }
+      justify-content: space-evenly;
+    }
+    @media (min-width: 1024px) {
+      margin-top: auto;
     }
   }
 }
