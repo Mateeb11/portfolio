@@ -26,6 +26,15 @@
         img {
           width: 100%;
           border-radius: 10px;
+
+          @media (min-width: 1024px) {
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            &:hover,
+            &:focus {
+              transform: translateY(-2em) scale(1.2);
+            }
+          }
         }
       }
     }
