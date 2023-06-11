@@ -23,6 +23,14 @@
         font-size: var(--fs-small);
         font-weight: var(--fw-light);
       }
+
+      @media (min-width: 1024px) {
+        font-size: var(--fs-large);
+
+        div {
+          font-size: var(--fs-semi-medium);
+        }
+      }
     }
 
     @media (min-width: 600px) {
