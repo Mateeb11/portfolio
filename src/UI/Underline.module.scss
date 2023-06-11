@@ -1,6 +1,7 @@
 .line {
   position: relative;
   text-decoration: underline var(--blue);
+  -webkit-text-decoration: underline var(--blue);
 
   // &::after {
   //   position: absolute;
