@@ -78,7 +78,7 @@ export default function Contact() {
       <SectionTitle title="CONTACT ME" />
       <div className={classes.container}>
         <div className={classes.planet}>
-          <img src={planet} alt="" />
+          <img src={planet} alt="Planet in space" />
           <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
         </div>
         <form
@@ -133,7 +133,7 @@ export default function Contact() {
             {errorMessage}
           </p>
           <div className={`${classes.heart} ${isSent && classes.showHeart}`}>
-            <img src={heart} alt="" />
+            <img src={heart} alt="A blue heart" />
             <p>
               Thanks for reaching out to me, I will reply to you as soon as
               possible.

@@ -70,7 +70,7 @@ export default function Background() {
               default: "bounce",
             },
             random: true,
-            speed: 0.07,
+            speed: 0.1,
             straight: false,
           },
           number: {
@@ -78,7 +78,7 @@ export default function Background() {
               enable: true,
               area: 800,
             },
-            value: 180,
+            value: 280,
           },
           opacity: {
             value: 0.5,

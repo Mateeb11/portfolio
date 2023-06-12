@@ -2,11 +2,11 @@ import classes from "./Project.module.scss";
 
 import Button from "../../UI/Button";
 
-export default function Project({ title, skills, image, code, website }) {
+export default function Project({ title, skills, image, code, website, alt }) {
   return (
     <div className={classes.project}>
       <div className={classes.imageContainer}>
-        <img src={image}></img>
+        <img src={image} alt={alt}></img>
       </div>
 
       <div className={classes.projectInfo}>

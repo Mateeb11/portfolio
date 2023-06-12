@@ -23,6 +23,7 @@ export default function Portfolio() {
       <div className={classes.container}>
         <Project
           image={isBigScreen ? multiStepFormDesktop : multiStepFormMobile}
+          alt="The main page of the website"
           title="Multi-step from"
           skills="React JS, Sass, JavaScript"
           website="https://aback-icicle.surge.sh/"
@@ -30,6 +31,7 @@ export default function Portfolio() {
         />
         <Project
           image={isBigScreen ? easybankDesktop : easybankMobile}
+          alt="The main page of the website"
           title="EasyBank landing page"
           skills="React JS, Sass"
           website="https://gifted-selection.surge.sh/"
@@ -37,6 +39,7 @@ export default function Portfolio() {
         />
         <Project
           image={isBigScreen ? restCoutriesDesktop : restCoutriesMobile}
+          alt="The main page of the website"
           title="REST Countries API with color theme switcher"
           skills="React JS, React-Router-DOM, Redux-Toolkit, CSS, JavaScript"
           website="https://humdrum-smell.surge.sh/"
@@ -44,6 +47,7 @@ export default function Portfolio() {
         />
         <Project
           image={isBigScreen ? eCommerceDesktop : eCommerceMobile}
+          alt="The main page of the website"
           title="E-commerce product page"
           skills="React JS, CSS, JavaScript"
           website="https://present-hook.surge.sh/"
