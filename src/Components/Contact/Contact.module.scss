@@ -16,6 +16,8 @@
   }
 
   .form {
+    position: relative;
+
     display: grid;
     width: min(95%, 25em);
 
@@ -62,10 +64,37 @@
     .errorLine {
       border-bottom: 1px solid var(--error);
     }
-    .show {
+    .showError {
       color: var(--error);
       visibility: visible;
       margin-top: 1.5em;
+    }
+
+    .heart {
+      visibility: hidden;
+      position: absolute;
+
+      display: grid;
+      gap: 3em;
+
+      align-items: center;
+      justify-items: center;
+
+      top: 2em;
+      padding-inline: 1em;
+
+      p {
+        font-size: var(--fs-semi-medium);
+        font-weight: var(--fw-regular);
+      }
+    }
+    .showHeart {
+      visibility: visible;
+    }
+  }
+  .removeForm {
+    & > * {
+      visibility: hidden;
     }
   }
 
@@ -87,6 +116,11 @@
       input,
       textarea {
         font-size: var(--fs-medium);
+      }
+
+      .heart {
+        top: 4em;
+        padding-inline: 3em;
       }
     }
   }

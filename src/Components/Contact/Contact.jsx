@@ -10,6 +10,7 @@ import UnderLine from "../../UI/Underline";
 import Button from "../../UI/Button";
 
 import planet from "../../assets/planet.png";
+import heart from "../../assets/blue-heart.svg";
 
 export default function Contact() {
   const form = useRef();
@@ -34,6 +35,8 @@ export default function Contact() {
       );
   };
 
+  const [isSent, setIsSent] = useState(false);
+
   const [isSubmitted, setSubmitted] = useState(false);
 
   const [isNameValid, setIsNameValid] = useState(false);
@@ -44,21 +47,18 @@ export default function Contact() {
 
   const errorHandler = (event) => {
     if (event.target.name === "user_email") {
-      console.log("email");
       if (isEmail(event.target.value)) {
         setIsEmailValid(true);
       } else {
         setIsEmailValid(false);
       }
     } else if (event.target.name === "user_name") {
-      console.log("name");
       if (event.target.value === "") {
         setIsNameValid(false);
       } else {
         setIsNameValid(true);
       }
     } else {
-      console.log("message");
       if (event.target.value === "") {
         setIsMessageValid(false);
       } else {
@@ -84,7 +84,7 @@ export default function Contact() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className={classes.form}
+          className={`${classes.form} ${isSent && classes.removeForm}`}
           id="contact"
         >
           <input
@@ -117,6 +117,8 @@ export default function Contact() {
               if (!isNameValid || !isEmailValid || !isMessageValid) {
                 e.preventDefault();
                 setSubmitted(true);
+              } else {
+                setIsSent(true);
               }
             }}
           >
@@ -125,11 +127,18 @@ export default function Contact() {
           <p
             className={`${classes.error}  ${
               (!isNameValid || !isEmailValid || !isMessageValid) &
-                isSubmitted && classes.show
+                isSubmitted && classes.showError
             }`}
           >
             {errorMessage}
           </p>
+          <div className={`${classes.heart} ${isSent && classes.showHeart}`}>
+            <img src={heart} alt="" />
+            <p>
+              Thanks for reaching out to me, I will reply to you as soon as
+              possible.
+            </p>
+          </div>
         </form>
       </div>
     </div>
