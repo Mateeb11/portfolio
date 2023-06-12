@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
+import isEmail from "validator/lib/isEmail";
 
 import classes from "./Contact.module.scss";
 
@@ -32,6 +33,46 @@ export default function Contact() {
         }
       );
   };
+
+  const [isSubmitted, setSubmitted] = useState(false);
+
+  const [isNameValid, setIsNameValid] = useState(false);
+
+  const [isEmailValid, setIsEmailValid] = useState(false);
+
+  const [isMessageValid, setIsMessageValid] = useState(false);
+
+  const errorHandler = (event) => {
+    if (event.target.name === "user_email") {
+      console.log("email");
+      if (isEmail(event.target.value)) {
+        setIsEmailValid(true);
+      } else {
+        setIsEmailValid(false);
+      }
+    } else if (event.target.name === "user_name") {
+      console.log("name");
+      if (event.target.value === "") {
+        setIsNameValid(false);
+      } else {
+        setIsNameValid(true);
+      }
+    } else {
+      console.log("message");
+      if (event.target.value === "") {
+        setIsMessageValid(false);
+      } else {
+        setIsMessageValid(true);
+      }
+    }
+  };
+
+  const errorMessage =
+    !isNameValid || !isMessageValid
+      ? "Please fill all the fields"
+      : !isEmailValid
+      ? "Please enter a valid email"
+      : ".";
   return (
     <div>
       <SectionTitle title="CONTACT ME" />
@@ -47,18 +88,48 @@ export default function Contact() {
           id="contact"
         >
           <input
-            className={classes}
+            className={!isNameValid & isSubmitted && classes.errorLine}
             type="text"
             name="user_name"
             placeholder="Name"
+            onChange={errorHandler}
           />
 
-          <input type="email" name="user_email" placeholder="Email" />
+          <input
+            className={!isEmailValid & isSubmitted && classes.errorLine}
+            type="email"
+            name="user_email"
+            placeholder="Email"
+            onChange={errorHandler}
+          />
 
-          <textarea name="message" placeholder="Message" rows="7" />
-          <Button button={true} className={classes.button}>
+          <textarea
+            className={!isMessageValid & isSubmitted && classes.errorLine}
+            name="message"
+            placeholder="Message"
+            rows="7"
+            onChange={errorHandler}
+          />
+          <Button
+            button={true}
+            className={classes.button}
+            onClick={(e) => {
+              if (!isNameValid || !isEmailValid || !isMessageValid) {
+                e.preventDefault();
+                setSubmitted(true);
+              }
+            }}
+          >
             Send
           </Button>
+          <p
+            className={`${classes.error}  ${
+              (!isNameValid || !isEmailValid || !isMessageValid) &
+                isSubmitted && classes.show
+            }`}
+          >
+            {errorMessage}
+          </p>
         </form>
       </div>
     </div>

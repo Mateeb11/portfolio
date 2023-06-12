@@ -17,7 +17,8 @@
     "react-responsive": "^9.0.2",
     "sass": "^1.62.1",
     "tsparticles": "^2.9.3",
-    "tsparticles-engine": "^2.9.3"
+    "tsparticles-engine": "^2.9.3",
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

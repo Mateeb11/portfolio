@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
 
+  text-align: center;
   gap: 4.125em;
 
   img {
@@ -45,6 +46,26 @@
 
     .button {
       margin: auto;
+    }
+
+    .error {
+      visibility: hidden;
+
+      margin-top: -1em;
+
+      color: var(--white);
+      font-size: var(--fs-small);
+      font-weight: var(--fw-regular);
+
+      transition: margin 0.5s ease, visibility 0.5s ease;
+    }
+    .errorLine {
+      border-bottom: 1px solid var(--error);
+    }
+    .show {
+      color: var(--error);
+      visibility: visible;
+      margin-top: 1.5em;
     }
   }
 
