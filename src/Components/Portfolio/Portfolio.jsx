@@ -9,11 +9,15 @@ import multiStepFormMobile from "../../assets/projects/Multi-step form/mobile.pn
 import easybankMobile from "../../assets/projects/EasyBank landing page/mobile.png";
 import restCoutriesMobile from "../../assets/projects/REST Countries API with color theme switcher/mobile.png";
 import eCommerceMobile from "../../assets/projects/E-commerce product page/mobile.png";
+import countdownMobile from "../../assets/projects/Launch Countdown Timer/mobile.png";
+import gpaMobile from "../../assets/projects/GPA Calculator/mobile.png";
 
 import multiStepFormDesktop from "../../assets/projects/Multi-step form/desktop.png";
 import easybankDesktop from "../../assets/projects/EasyBank landing page/desktop.png";
 import restCoutriesDesktop from "../../assets/projects/REST Countries API with color theme switcher/desktop.png";
 import eCommerceDesktop from "../../assets/projects/E-commerce product page/desktop.png";
+import countdownDesktop from "../../assets/projects/Launch Countdown Timer/desktop.png";
+import gpaDesktop from "../../assets/projects/GPA Calculator/desktop.png";
 
 export default function Portfolio() {
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
@@ -52,6 +56,22 @@ export default function Portfolio() {
           skills="React JS, CSS, JavaScript"
           website="https://present-hook.surge.sh/"
           code="https://github.com/Mateeb11/ecommerce-product-page"
+        />
+        <Project
+          image={isBigScreen ? countdownDesktop : countdownMobile}
+          alt="The main page of the website"
+          title="Launch Countdown Timer"
+          skills="React JS, Sass"
+          website="https://timeless-timer.surge.sh/"
+          code="https://github.com/Mateeb11/launch-countdown-timer"
+        />
+        <Project
+          image={isBigScreen ? gpaDesktop : gpaMobile}
+          alt="The main page of the website"
+          title="GPA Calculator"
+          skills="React JS"
+          website="https://gpa-calc.surge.sh/"
+          code="https://github.com/Mateeb11/GPA-Calculator"
         />
       </div>
     </section>
