@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
 
-  padding-top: 3.0625em;
+  padding-top: 2.5em;
 
   gap: 5.625em;
 
@@ -24,18 +24,45 @@
       gap: 1.5em;
     }
 
-    @keyframes App-logo-spin {
-      from {
-        transform: rotate(0deg);
+    .picture {
+      position: relative;
+      img {
+        transform: translateX(-1em);
       }
-      to {
-        transform: rotate(360deg);
-      }
-    }
 
-    img {
-      width: 50%;
-      animation: App-logo-spin infinite 20s linear;
+      @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .icon {
+        position: absolute;
+        animation: App-logo-spin infinite 20s linear;
+      }
+      .reactIcon {
+        top: 0.75em;
+        left: 0.75em;
+        path {
+          fill: var(--blue);
+        }
+      }
+      .angularIcon {
+        top: 4.5em;
+        left: 0;
+        path {
+          fill: var(--error);
+        }
+      }
+      .jsIcon {
+        top: 5em;
+        right: 0.5em;
+        path {
+          fill: yellow;
+        }
+      }
     }
 
     h1 {
@@ -77,9 +104,12 @@
           width: min(100%, 35em);
         }
 
-        img {
-          width: 20em;
-          margin-right: 2em;
+        .picture {
+          img {
+            transform: none;
+            width: 25em;
+            margin-right: 2em;
+          }
         }
       }
     }
