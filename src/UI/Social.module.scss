@@ -12,11 +12,11 @@
     display: flex;
     gap: 2.5em;
 
-    img {
-      transition: transform 0.5s ease;
-      &:hover,
-      &:focus {
-        transform: scale(1.5);
+    .icon {
+      &:hover {
+        path {
+          fill: var(--blue);
+        }
       }
     }
   }

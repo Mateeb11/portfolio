@@ -1,8 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import classes from "./Social.module.scss";
 
 import logo from "../assets/logo.svg";
-import linkedin from "../assets/linkedin.svg";
-import github from "../assets/github.svg";
 
 export default function Social() {
   return (
@@ -17,10 +18,18 @@ export default function Social() {
       />
       <div className={classes.social}>
         <a href="https://www.linkedin.com/in/mateeb-alharbi/">
-          <img src={linkedin} alt="LinkedIn logo and a link to my page" />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className={`${classes.icon}`}
+            size="2x"
+          />
         </a>
         <a href="https://github.com/Mateeb11">
-          <img src={github} alt="GitHub logo and a link to my page" />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className={`${classes.icon}`}
+            size="2x"
+          />
         </a>
       </div>
     </div>
