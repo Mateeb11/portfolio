@@ -40,25 +40,56 @@
       }
       .icon {
         position: absolute;
-        animation: App-logo-spin infinite 20s linear;
+        top: 6em;
+        z-index: -1;
       }
+
+      $period: 0.25s;
+      $delay: 0.25s;
       .reactIcon {
-        top: 0.75em;
-        left: 0.75em;
+        left: 5em;
+        @keyframes moveReact {
+          100% {
+            top: 0.75em;
+            left: 0.75em;
+          }
+        }
+
+        animation: moveReact $period linear $delay forwards,
+          App-logo-spin infinite 20s linear;
+
         path {
           fill: var(--blue);
         }
       }
       .angularIcon {
-        top: 4.5em;
-        left: 0;
+        left: 5em;
+        @keyframes moveAngular {
+          100% {
+            top: 4.5em;
+            left: 0;
+          }
+        }
+
+        animation: moveAngular $period linear $delay forwards,
+          App-logo-spin infinite 20s linear;
+
         path {
           fill: var(--error);
         }
       }
       .jsIcon {
-        top: 5em;
-        right: 0.5em;
+        right: 5em;
+        @keyframes moveJs {
+          100% {
+            top: 5em;
+            right: 0.5em;
+          }
+        }
+
+        animation: moveJs $period linear $delay forwards,
+          App-logo-spin infinite 20s linear;
+
         path {
           fill: yellow;
         }
