@@ -12,8 +12,11 @@ export default function Skills() {
         <Skill skill="CSS" level="Expert" />
         <Skill skill="JavaScript" level="Expert" />
         <Skill skill="React JS" level="Expert" />
-        <Skill skill="Sass" level="Advanced" />
         <Skill skill="Redux-Toolkit" level="Intermediate" />
+        <Skill skill="Sass" level="Advanced" />
+        <Skill skill="Angular JS" level="Intermediate" />
+        <Skill skill="Bootstrap" level="Intermediate" />
+        <Skill skill="Tailwind CSS" level="Intermediate" />
       </ul>
     </div>
   );
