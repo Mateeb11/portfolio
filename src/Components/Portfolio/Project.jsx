@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import classes from "./Project.module.scss";
 
 import Button from "../../UI/Button";
@@ -6,7 +8,7 @@ export default function Project({ title, skills, image, code, website, alt }) {
   return (
     <div className={classes.project}>
       <div className={classes.imageContainer}>
-        <img src={image} alt={alt}></img>
+        <LazyLoadImage src={image} alt={alt}></LazyLoadImage>
       </div>
 
       <div className={classes.projectInfo}>

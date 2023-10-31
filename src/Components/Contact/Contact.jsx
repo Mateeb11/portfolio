@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
@@ -78,7 +80,7 @@ export default function Contact() {
       <SectionTitle title="CONTACT ME" />
       <div className={classes.container}>
         <div className={classes.planet}>
-          <img src={planet} alt="Planet in space" />
+          <LazyLoadImage src={planet} alt="Planet in space" />
           <UnderLine className={classes.email}>Mateeb2000@gmail.com</UnderLine>
         </div>
         <form
