@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { lazy } from "react";
+import resume from '../../assets/Mateeb_Resume.pdf'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -63,7 +64,9 @@ export default function MainSection() {
             A front end web developer using <span>React JS</span>, passionate
             about building responsive and modern websites.
           </p>
-          <Button href="#contact">CONTACT ME</Button>
+          <a href={resume} download>
+          <Button down>DOWNLOAD CV</Button>
+          </a>
         </div>
       </div>
       <Skills></Skills>
