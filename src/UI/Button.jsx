@@ -7,6 +7,7 @@ export default function Button({
   button = false,
   onClick,
   className,
+  download = false,
 }) {
   return button ? (
     <div className={`${classes.grayBox}  ${className}`}>
@@ -24,6 +25,7 @@ export default function Button({
         className={`${classes.button} ${className}`}
         href={href}
         target={target}
+        download={download}
       >
         {children}
       </a>

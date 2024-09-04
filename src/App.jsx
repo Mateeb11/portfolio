@@ -4,6 +4,7 @@ import Background from "./background";
 
 import Header from "./Components/Header/Header";
 import MainSection from "./Components/MainSection/MainSection";
+import Experience from "./Components/Experience/Experience";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
@@ -17,7 +18,7 @@ function App() {
           <Header />
           <MainSection />
         </div>
-
+        <Experience />
         <Portfolio />
         <Contact />
         <Footer />
