@@ -1,16 +1,26 @@
-.container {
-  display: grid;
+.experienceContainer {
+  display: flex;
   gap: 2em;
 
-  .experience {
+  .container {
     display: grid;
+    gap: 2em;
 
-    font-size: var(--fs-medium);
-    font-weight: var(--fw-regular);
+    .experience {
+      display: grid;
 
-    .small {
-      font-size: var(--fs-small);
-      font-weight: var(--fw-light);
+      font-size: var(--fs-medium);
+      font-weight: var(--fw-regular);
+
+      .small {
+        font-size: var(--fs-small);
+        font-weight: var(--fw-light);
+      }
     }
+  }
+  .milestoneContainer {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
   }
 }
