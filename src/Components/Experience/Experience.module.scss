@@ -2,15 +2,25 @@
   display: grid;
   gap: 2em;
 
-  .experience {
-    display: grid;
+  list-style-image: url(../../assets/circle-grey.svg);
+
+  .milestone {
+    margin-inline: 0.75em;
 
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
+
+    .content {
+      display: grid;
+      gap: 0.125em;
+    }
 
     .small {
       font-size: var(--fs-small);
       font-weight: var(--fw-light);
     }
+  }
+  .current {
+    list-style-image: url(../../assets/circle-white.svg);
   }
 }
