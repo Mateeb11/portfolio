@@ -20,6 +20,14 @@
       font-size: var(--fs-small);
       font-weight: var(--fw-light);
     }
+
+    @media (min-width: 1024px) {
+      font-size: var(--fs-large);
+
+      .small {
+        font-size: var(--fs-semi-medium);
+      }
+    }
   }
   .current {
     list-style-image: url(../../assets/circle-white.svg);
@@ -66,5 +74,10 @@
     border-radius: 100%;
     flex: 0 0 auto;
     animation: opacity-animation 1s linear;
+
+    @media (min-width: 1024px) {
+      top: 0.6em;
+      left: -0.475em;
+    }
   }
 }
