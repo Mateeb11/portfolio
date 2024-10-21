@@ -3,8 +3,6 @@ import MileStone from "./MileStone";
 
 import SectionTitle from "../../UI/SectionTitle";
 
-import whiteCircle from "../../assets/circle-white.svg";
-
 export default function Experience() {
   return (
     <section>
@@ -25,6 +23,13 @@ export default function Experience() {
           title="Junior Software Developer | Misk Traineeship Program"
           company="WAKI · Internship"
           time="08/2023 - 11/2023"
+          description={[
+            "Fix responsiveness issues",
+            "Debugging",
+            "Add new features",
+            "Refactor the code for old pages",
+            "Suggest new ideas and how to do it",
+          ]}
         ></MileStone>
         <MileStone
           title="IOT and Software Development"

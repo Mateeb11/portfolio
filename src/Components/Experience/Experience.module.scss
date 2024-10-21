@@ -21,6 +21,16 @@
       font-weight: var(--fw-light);
     }
 
+    .description {
+      display: grid;
+      gap: 0.25em;
+      padding-top: 0.25em;
+
+      span {
+        color: var(--gray);
+      }
+    }
+
     @media (min-width: 1024px) {
       font-size: var(--fs-large);
 
