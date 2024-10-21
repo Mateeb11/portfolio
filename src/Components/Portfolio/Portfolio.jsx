@@ -23,7 +23,7 @@ export default function Portfolio() {
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   return (
     <section>
-      <SectionTitle title="PORTFOLIO" />
+      <SectionTitle title="PORTFOLIO" smallMargin={true} />
       <div className={classes.container}>
         <Project
           image={isBigScreen ? multiStepFormDesktop : multiStepFormMobile}
