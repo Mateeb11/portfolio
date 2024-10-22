@@ -16,7 +16,7 @@ export default function MileStone({
   return (
     <li className={`${classes.milestone} ${current && classes.current}`}>
       <div className={classes.content} {...getToggleProps()} tabIndex="-1">
-        {current && <span className={classes.pulse}></span>}
+        {/* {current && <span className={classes.pulse}></span>} */}
         <span>{title}</span>
         <span className={classes.small}>{company}</span>
         <div className={classes.timeMore}>
