@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={classes.footer}>
       <Social />
 
-      <p>Copyright © 2023 Mateeb Alharbi. all rights reserved</p>
+      <p>Copyright © 2025 Mateeb Alharbi. All rights reserved</p>
     </footer>
   );
 }
