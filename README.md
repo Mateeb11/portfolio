@@ -1,3 +1,7 @@
+> [!WARNING]
+> **Deprecated.** This is the old version of my portfolio and is no longer maintained or deployed.
+> The current site lives at [Mateeb11/portfolio-v2](https://github.com/Mateeb11/portfolio-v2) and is published at https://mateeb.com.
+
 # Portfolio
 test
 
